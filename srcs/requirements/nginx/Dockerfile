@@ -1,4 +1,4 @@
-FROM debian:12
+FROM debian:11
 
 RUN apt-get update && apt-get upgrade && \
   apt-get install -y vim nginx openssl && \
