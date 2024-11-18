@@ -61,13 +61,13 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/aherman/inception/data/web/
+      device: /home/aherman/data/web/
       o : bind
   data:
     driver: local
     driver_opts:
       type: none
-      device: /home/aherman/inception/data/mariadb/
+      device: /home/aherman/data/mariadb/
       o : bind
 secrets:
   wp_admin_password:
