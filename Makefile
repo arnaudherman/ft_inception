@@ -1,4 +1,4 @@
-DATA = /Users/arnaudherman/inception/data
+DATA = /home/aherman/data
 
 YAML = ./srcs/docker-compose.yaml
 
@@ -18,7 +18,7 @@ down:
 clean: 
 	$(DOCKER) $(YAML) down -v --rmi local
 fclean: clean
-	rm -rf $(DATA)
+	sudo rm -rf $(DATA)
 
 re : fclean all
 
